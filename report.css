@@ -1,0 +1,17 @@
+body {
+  font-size: 12pt;
+  font-family: monospace;
+}
+
+hr {
+  page-break-after: always;
+  visibility: hidden;
+}
+
+table.report {
+  width: 100%;
+}
+
+td.right {
+  text-align: right;
+}

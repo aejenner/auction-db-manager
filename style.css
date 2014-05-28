@@ -1,0 +1,150 @@
+body {
+  font-family: sans-serif;
+  background: #DDD;
+  font-size: medium;
+}
+
+header {
+  margin-bottom: 0.25em;
+  color: #444;
+  border-bottom: 1px solid #444;
+}
+
+div#fontButtonContainer {
+  display: table;
+  position: relative;
+  right: 0.25em;
+  table-layout: fixed;
+  width: 6em;
+  border-collapse: separate;
+  border-spacing: 0.25em 0em;
+}
+
+body > span {
+  font-size: larger;
+}
+
+input {
+  font-size: 120%;
+}
+
+div.minibutton {
+  text-align: center;
+  display: inline;
+  width: auto;
+  border: 1px solid #777;
+  padding: 0.25em;
+  background: linear-gradient(#AAA, #888);
+  cursor: pointer;
+  box-shadow: 0 0.2em 0.25em #000;
+  display: table-cell;
+}
+
+div.minibutton#smallFont {
+  font-size: smaller;
+}
+
+div.minibutton#bigFont {
+  font-size: larger;
+}
+
+div#err {
+  background: linear-gradient(#F20, #C00);
+  border: 1px solid #000;
+  padding: 0.25em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  box-shadow: 0 0.5em 1em #000;
+}
+
+div#confirm {
+  background: linear-gradient(#04F, #22C);
+  color: #FFF;
+  border: 1px solid #000;
+  padding: 0.25em;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  box-shadow: 0 0.5em 1em #000;
+}
+
+div#err > p, div#confirm > p {
+  margin: 0;
+}
+
+div#err > p:before {
+  content: "Error: ";
+  color: #400;
+}
+
+div#ulist, div#ilist {
+  height: 8em;
+  overflow-y: scroll;
+  background: #EEE;
+  box-shadow: inset 0 0 1em #000;
+}
+
+div#ulist > div, div#ilist > div {
+  border-bottom: 1px solid #AAA;
+  border-top: 1px solid #AAA;
+  border-collapse: collapse;
+  font-family: monospace;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+div#ulist > div > span, div#ilist > div > span {
+  color: #444;
+}
+
+div#ulist > div > span.links, div#ilist > div > span.links {
+  text-align: right;
+  float: right;
+}
+
+footer {
+  color: #444;
+  border-top: 1px solid #444;
+  font-size: x-small;
+  float: bottom;
+}
+
+div.button {
+  border: 1px solid #777;
+  font-size: larger;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  background: linear-gradient(#AAA, #888);
+  cursor: pointer;
+  box-shadow: 0 0.5em 1em #000;
+}
+
+div.button:hover, div.minibutton:hover {
+  background: linear-gradient(#FFF, #AAA);
+}
+
+div.button:after {
+  color: #444;
+  content: "Click to Expand";
+  text-align: right;
+  float: right;
+}
+
+div.foldout {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: none;
+}
+
+label {
+  font-size: 80%;
+}
+
+hr {
+  page-break-after: always;
+  visibility: hidden;
+}
+
+table.report {
+  width: 100%;
+}
