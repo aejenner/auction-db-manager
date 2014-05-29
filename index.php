@@ -266,6 +266,9 @@ if ($action == "user") { //add/edit user
           <input type="Submit" value="View Individual Report">
         </form>
       </p>
+      <p>
+        <form style="display: inline;" action="overall.php" method="GET"><input type="submit" value="View Overall Report"/></form>
+      </p>
     </div>
     <footer>
       This software copyright (c) Andrew Jenner, 2014. Available under the MIT

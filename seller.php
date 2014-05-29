@@ -11,7 +11,7 @@ $sellerUser = filter_input(INPUT_GET, "sellerReportID", FILTER_SANITIZE_SPECIAL_
 <html>
   <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Seller Report</title>
     <link rel="stylesheet" type="text/css" href="./report.css"/>
   </head>
   <body style="font-size: 12pt;">
