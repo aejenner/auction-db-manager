@@ -26,11 +26,15 @@ mysql_select_db($db);
     $totalListings = mysql_num_rows($q);
     
     $q = mysql_query("SELECT * FROM items WHERE seller_id IS NOT NULL AND buyer_id IS NOT NULL AND price IS NOT NULL;");
-    $totalSales = mysql_num_rows($q);
+    //$totalSales = mysql_num_rows($q);
     
+    $totalSales = 0;
     $totalSalePrice = 0;
     while ($result = mysql_fetch_assoc($q)) {
-      $totalSalePrice += $result["price"];
+      if ($result["price"] > 0) {
+        $totalSalePrice += $result["price"];
+        $totalSales++;
+      }
     }
     
     
