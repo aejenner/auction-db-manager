@@ -73,8 +73,12 @@ mysql_select_db($db);
         <td><?php echo $totalSales / $totalBuyers; ?></td>
       </tr>
       <tr>
-        <td>Average Sale Price: </td>
+        <td>Average Price per Sale: </td>
         <td><?php echo $totalSalePrice / $totalSales; ?></td>
+      </tr>
+      <tr>
+        <td>Average Price per Listing: </td>
+        <td><?php echo $totalSalePrice / $totalListings; ?></td>
       </tr>
     </table>
   </body>
